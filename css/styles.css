@@ -1,0 +1,45 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  font-size: 100px;
+
+}
+.button-wrapper{
+  display: flex;
+}
+
+.label{
+  color: #424242;
+  font-size: 14px;
+  letter-spacing: .8px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+.button{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 105px;
+  width: 100%;
+  min-width: 105px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid white;
+}
+
+.button:hover { box-shadow: inset 0px 0px 20px 5px rgba(255, 255, 255, 0.3); }
+
+.blue{ background-color: #03a9f4; }
+
+.orange{ background-color: #ff9800; }
+
+.red{ background-color: #f44336; }
