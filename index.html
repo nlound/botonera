@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
@@ -12,32 +13,48 @@
 
     <audio id="audio" src="./" type="audio/mpeg" autostart="false" preload="none" ></audio>
 
-    <div class="button-wrapper">
-      <div class="button orange" onclick="playSound('mp3/AIRHORN.mp3');"><div class="label">AIRHORN</div></div>
-      <div class="button blue" onclick="playSound('mp3/2SAD4ME.mp3');"><div class="label">2SAD4ME</div></div>
-      <div class="button blue" onclick="playSound('mp3/AIRPORN.mp3');"><div class="label">A-A-Airhorn</div></div>
-      <div class="button blue" onclick="playSound('mp3/CHEWBACCA.mp3');"><div class="label">Chewbacca</div></div>
-      <div class="button blue" onclick="playSound('mp3/Turn_Down_For_What.mp3');"><div class="label">T D F W</div></div>
-      <div class="button blue" onclick="playSound('mp3/botellero.mp3');"><div class="label">Botellero</div></div>
-    </div>
-    <div class="button-wrapper">
-      <div class="button red" onclick="stop();"><div class="label">STOP ALL SOUNDS</div></div>
-    </div>
-    <script>
-      function stop() {
-        var sound = document.getElementById("audio");
-        sound.pause();
-        sound.currentTime = 0;
-      }
+    <div class="btn_wrapper">
 
-      function playSound(file) {
-        stop();
-        var sound = document.getElementById("audio");
-        sound.src = file;
-        sound.play();
-      }
-    </script>
+      <div class="btn" onclick="playSound('mp3/AIRHORN.mp3');">
+        <div class="border"><div class="face"><i class="material-icons md-light">play_arrow</i></div></div>
+        <div class="label">Airhorn</div>
+      </div>
 
+      <div class="btn" onclick="playSound('mp3/2SAD4ME.mp3');">
+        <div class="border"><div class="face"><i class="material-icons md-light">invert_colors</i></div></div>
+        <div class="label">Sadness</div>
+      </div>
+
+      <div class="btn" onclick="playSound('mp3/AIRPORN.mp3');">
+        <div class="border"><div class="face"><i class="material-icons md-light">fast_forward</i></div></div>
+        <div class="label">AirhornS</div>
+      </div>
+
+      <div class="btn" onclick="playSound('mp3/CHEWBACCA.mp3');">
+        <div class="border"><div class="face"><i class="material-icons md-light">pets</i></div></div>
+        <div class="label">Chebacca</div>
+      </div>
+
+      <div class="btn" onclick="playSound('mp3/Turn_Down_For_What.mp3');">
+        <div class="border"><div class="face"><i class="material-icons md-light">album</i></div></div>
+        <div class="label">Td4What</div>
+      </div>
+
+      <div class="btn" onclick="playSound('mp3/botellero.mp3');">
+        <div class="border"><div class="face"><i class="material-icons md-light">directions_bus</i></div></div>
+        <div class="label">Botellero</div>
+      </div>
+
+      <div class="btn stop" onclick="stop();">
+        <div class="border stop_width"><div class="face stop_width"><i class="material-icons md-light">stop</i></div></div>
+        <div class="label">STOP</div>
+      </div>
+    </div>
+
+
+
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>
