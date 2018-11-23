@@ -18,69 +18,68 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/fontawesome.css" integrity="sha384-BzCy2fixOYd0HObpx3GMefNqdbA7Qjcc91RgYeDjrHTIEXqiF00jKvgQG0+zY/7I" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/createjs.min.js"></script>
+
   </head>
   <body>
 
-    <audio id="audio" src="./" type="audio/mpeg" autostart="false" preload="none" ></audio>
-
     <div class="btn_wrapper">
 
-      <div class="btn" onclick="playSound('mp3/singlehorn.mp3');">
-        <div class="border"><div class="face"><i class="fas fa-bullhorn"></i></div></div>
+      <div class="btn" data-sound="singlehorn">
+        <div class="border">
+          <div class="face"><i class="fas fa-bullhorn"></i></div></div>
         <div class="label">Airhorn</div>
       </div>
 
-      <div class="btn" onclick="playSound('mp3/sadmusic.mp3');">
+      <div class="btn" data-sound="sadmusic">
         <div class="border"><div class="face"><i class="fas fa-sad-tear"></i></div></div>
         <div class="label">Sadness</div>
       </div>
 
-      <div class="btn" onclick="playSound('mp3/multiplehorn.mp3');">
+      <div class="btn" data-sound="multiplehorn">
         <div class="border"><div class="face"><i class="fas fa-bullhorn"></i></div></div>
         <div class="label">AirhornS</div>
       </div>
 
-      <div class="btn" onclick="playSound('mp3/sexysax.mp3');">
+      <div class="btn" data-sound="sexysax">
         <div class="border"><div class="face"><i class="fas fa-heart"></i></div></div>
         <div class="label">Sexy Sax</div>
       </div>
 
-      <div class="btn" onclick="playSound('mp3/rimshot.mp3');">
+      <div class="btn" data-sound="rimshot">
         <div class="border"><div class="face"><i class="fas fa-drum"></i></div></div>
         <div class="label">Bad Joke</div>
       </div>
 
       
-      <div class="btn" onclick="playSound('mp3/turndown.mp3');">
+      <div class="btn" data-sound="turndown">
         <div class="border"><div class="face"><i class="fas fa-arrow-down"></i></div></div>
         <div class="label">Td4What</div>
       </div>
 
-      <div class="btn" onclick="playSound('mp3/pasystem.mp3');">
+      <div class="btn" data-sound="pasystem">
         <div class="border"><div class="face"><i class="fas fa-wine-bottle"></i></div></div>
         <div class="label">Botellero</div>
       </div>
 
-      <div class="btn" onclick="playSound('mp3/stadiumorgan.mp3');">
+      <div class="btn" data-sound="stadiumorgan">
         <div class="border"><div class="face"><i class="fas fa-hockey-puck"></i></div></div>
         <div class="label">Stadium organ</div>
       </div>
 
-      <div class="btn" onclick="playSound('mp3/hellodarkness.mp3');">
+      <div class="btn" data-sound="hellodarkness">
         <div class="border"><div class="face"><i class="fas fa-skull"></i></div></div>
         <div class="label">Hello Darkness</div>
       </div>
 
 
     
-      <div class="btn stop" onclick="stop();">
+      <div class="btn stop" data-sound="">
         <div class="border stop_width"><div class="face stop_width"><i class="fas fa-stop"></i></div></div>
         <div class="label">STOP</div>
       </div>
     </div>
-
-
-
 
     <script src="js/script.js"></script>
 
